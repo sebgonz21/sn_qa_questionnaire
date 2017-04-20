@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Event for store notification</description>
+        <event_name>x_kasp_qa_question.storesummited</event_name>
+        <fired_by>Business Rule</fired_by>
+        <queue/>
+        <suffix>storesummited</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-19 20:31:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3ce551872b3e120445eeaacc17da1585</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_kasp_qa_question.storesummited</sys_name>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sysevent_register_3ce551872b3e120445eeaacc17da1585</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-19 20:31:28</sys_updated_on>
+        <table>x_kasp_qa_question_qa_questionaire</table>
+    </sysevent_register>
+</record_update>

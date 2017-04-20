@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <collection>x_kasp_qa_question_qa_questionaire</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name>x_kasp_qa_question.submitted</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <group/>
+        <group_field/>
+        <importance/>
+        <include_attachments>true</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <list/>
+        <list_field/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>QA Questionnaire has been submitted by</p>
+<p>Store Number: ${store_number}</p>
+<p>Store Name: ${store_name}</p>
+<p>Name: ${name}</p>
+<p>Channel: ${channel} &nbsp;</p>
+<p>Season: ${season}</p>
+<p>UPC: ${upc}</p>
+<p>Style Name: ${style_name}<br />Style Number: ${style_number}</p>
+<p>Color Name: ${color_name}<br />Color Code: ${color_code}<br /><br />Issue: ${issue}</p>
+<p>Issue Description: ${issue_description}</p>
+<p>&nbsp;</p>
+<p>To view form click on link&nbsp;${URI_REF}</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Questionaire Submitted</name>
+        <omit_watermark>false</omit_watermark>
+        <order/>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users>44425bfbf15ab88000720d46a2add363,26dc9067f56ac100649946d756988412,c7aeeaa8888e210098451ce1ad702abe,e85a992e0dd761009845633ab8404065,f3c4a2780a0a3c1c012846d9681c43bc</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>QA Questionnaire submitted</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-12 15:01:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>88678c3c2bb69200229d7b9ee8da1502</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Questionaire Submitted</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sysevent_email_action_88678c3c2bb69200229d7b9ee8da1502</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-05-23 15:14:51</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <user/>
+        <user_field/>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

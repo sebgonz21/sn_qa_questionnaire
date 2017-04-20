@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_kasp_qa_question.qa_questionaire_utils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>qa_questionaire_utils</name>
+        <script><![CDATA[var qa_questionaire_utils = Class.create();
+qa_questionaire_utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	loadUsers:function(){
+		var rec = new GlideRecord('sys_user');
+		rec.addQuery('user_name','CONTAINS','store');
+		rec.addQuery('active','true');
+		rec.query();
+		
+		var array = [];
+		var user = {};
+
+		while(rec.next()){
+			
+			user = {
+				user_name:''+rec.getValue('user_name'),
+				display_name:''+rec.getValue('u_display_name'),
+				system_id:''+rec.sys_id
+			};
+			array.push(user);
+		}
+		
+		var encoded_array = this._encodeJSON(array);
+		return encoded_array;
+	},
+	
+	
+		
+	_encodeJSON:function(object){
+		var encoded_object = new global.JSON().encode(object);
+		return encoded_object;
+	},
+													   
+    type: 'qa_questionaire_utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-07 21:06:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d10aabc32bae1200229d7b9ee8da1587</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>qa_questionaire_utils</sys_name>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_script_include_d10aabc32bae1200229d7b9ee8da1587</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-08 13:50:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

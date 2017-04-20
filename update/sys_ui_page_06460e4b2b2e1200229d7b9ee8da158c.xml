@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var userArray = [];
+
+(function loadUsers(callback){
+	
+	var assetAjax = new GlideAjax('qa_questionaire_utils');
+	assetAjax.addParam('sysparm_name','loadUsers');
+	assetAjax.getXML(callback);
+	
+})(returnUsers);
+
+/**** Call Back Function to return Ajax answer *****/
+function returnUsers(response){
+	var newanswer = response.responseXML.documentElement.getAttribute("answer");
+	userArray = JSON.parse(newanswer);
+	updateUserResults(userArray);
+}
+var availableTags = [];
+
+$(function() {
+	
+	(function(){
+		
+		if($('.first').hasClass('active')) {
+			$('.left').css("visibility","hidden");
+		} else if($('.last').hasClass('active')) {
+			$('.right').css("visibility","hidden");
+		}
+		
+	})();
+	
+	$('.carousel-control').click(function(){
+		
+		if($('.second').hasClass('active')){
+			if($(this).hasClass('left')){
+				$('.left').css("visibility","hidden");
+				$('.right').css("visibility","visible");
+			}
+			if($(this).hasClass('right')){
+				$('.left').css("visibility","visible");
+				$('.right').css("visibility","hidden");
+			}
+		}else{
+			$('.left').css("visibility","visible");
+			$('.right').css("visibility","visible");
+		}
+		
+		
+		
+	});
+	
+	
+	$("#storeNumber").keyup(function(keyPressed){
+		if(userArray.length <= 0){
+			return;
+		}
+		
+		var search_term = $(this).val();
+		
+		var searchTermArray = [search_term];
+		var userFieldArray = ['user_name'];
+		var results = [];
+		
+		if(keyPressed.which != 13 && searchTermArray[0] != ''){
+			results = searchArray(userArray,userFieldArray,searchTermArray);
+			
+			//updateUserResults(results);
+		}
+		
+		
+	});
+	
+	
+	
+});
+
+function updateUserResults(results){
+	availableTags = [];
+	var user = {};
+	
+	for(var i = 0; i <results.length; i++){
+		user = {label:results[i].user_name, value:results[i].user_name,display_name:results[i].display_name};
+		availableTags.push(user);
+	}
+	
+	$( "#storeNumber" ).autocomplete({
+		source: availableTags,
+		html: 'html'
+	});
+	
+}
+
+function searchArray(array,objectMemberArray,searchTermArray){
+	
+	array.sort(compare(objectMemberArray[0]));
+	
+	var maxResult = 10;
+	var outputNum = 0;
+	var resultArray = [];
+	
+	if(array.length > 0){
+		
+		
+		var arrayMember = {};
+		for(var i = 0;i<array.length;i++){
+			
+			arrayMember = array[i];
+			if(objectContains(arrayMember, objectMemberArray, searchTermArray)){
+				if( outputNum >= maxResult){
+					break;
+				}else{
+					
+					resultArray.push(arrayMember);
+					outputNum++;
+					
+				}
+			}
+			/*}*/
+		}
+	}
+	
+	return resultArray;
+	
+}
+
+function objectContains(object,fieldMemberArray,searchTermArray){
+	
+	if(fieldMemberArray.length != searchTermArray.length){
+		alert("field Member Array does not match search Term Array in length of members");
+	}
+	
+	var match = true;
+	for(var i = 0; i < fieldMemberArray.length ; i++){
+		//alert("checking object for field " + fieldMemberArray[i] + " has value " + object[fieldMemberArray[i]]);
+		//alert("searching for " + searchTermArray[i]);
+		if(object[fieldMemberArray[i]].toLowerCase().indexOf(searchTermArray[i].toLowerCase()) < 0){
+			match = false;
+		}
+		
+	}
+	return match;
+}
+
+/***** Compare Function for Sorting *****/
+function compare(objectMember) {
+	
+	return function(a,b){
+		if (a[objectMember].toLowerCase() < b[objectMember].toLowerCase()){
+			return -1;
+		}else if (a[objectMember].toLowerCase() > b[objectMember].toLowerCase()){
+			return 1;
+		}else{
+			return 0;
+		}
+	};
+}
+
+function addQuestionaire(){
+	
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_kasp_qa_question_qa_questionaire_home.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:requires name="my_jquery_min.jsdbx"/>
+	<g:requires name="my_jquery_ui_min.jsdbx"/>
+	
+	
+	
+	<style>
+	
+		.carousel-control{
+			margin-top:20px;
+			position: relative;
+			top: 100%; /* pushes the icon in the middle of the height */
+			z-index: 5;
+			display: inline-block;
+			
+			background:#44B8FA;
+			background-image:none !important;
+			filter:none !important;
+		
+			border-radius:5px;
+			width:100px;
+			font-size:15px;
+		
+		}
+		.left{
+			margin-right:90px;
+			margin-left:20px;
+		}
+		
+		#issueDesc{
+			width:600px;
+			height:100px;
+		}
+		
+		label{
+			margin-top:20px;
+		}
+		
+		#submit{
+			position:relative;
+			
+			margin-top: 3%;
+		}
+	</style>
+	
+	<h2>QA Questionaire</h2>
+	
+	<div id="carousel" class="carousel slide carousel-fade" data-interval="false">
+		<div class="carousel-inner">
+			<div class="active item first col-sm-3">
+				<label>Store Number</label>
+				<input id='storeNumber' class='form-control'>
+				</input>
+				<label>Store Name</label>
+				<input id='storeName' class='form-control'>
+				</input>
+				<label>Name</label>
+				<input id='name' class='form-control'>
+				</input>
+			</div>
+			
+			<div class="item second col-sm-3">
+			
+				<label>Season</label>
+				<input id='season' class='form-control'>
+				</input>
+				<label>Channel</label>
+				<input id='channel' class='form-control'>
+				</input>
+				<label>Style Name</label>
+				<input id='styleName' class='form-control'>
+				</input>
+				<label>Style Number</label>
+				<input id='styleNumber' class='form-control'>
+				</input>
+				<label>Color Name</label>
+				<input id='colorName' class='form-control'>
+				</input>
+				<label>Color Code</label>
+				<input id='colorCode' class='form-control'>
+				</input>
+			</div>
+			<div class="item last col-sm-3">
+				
+				<label>Issue</label>
+				<select class="form-control" id="issue">
+					<option>-- None --</option>
+					<option>Body Raw Material Defect</option>
+					<option>Trim Raw Material Defect</option>
+					<option>Hardware Defect</option>
+					<option>Construction Issue</option>
+					<option>Other</option>
+			    </select>
+
+				<label>Issue Description</label>
+				<textarea id='issueDesc' class='form-control'></textarea>
+				
+			</div>
+		</div>
+
+		<a class="carousel-control left" href="#carousel" data-slide="prev">Previous</a>
+		<a class="carousel-control right" href="#carousel" data-slide="next">Next</a>
+	</div>
+
+	<button id='submit' class='btn btn-success' onclick='addQuestionaire()'>Submit</button>
+	
+	
+</j:jelly>]]></html>
+        <name>qa_questionaire_home</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-07 13:46:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>06460e4b2b2e1200229d7b9ee8da158c</sys_id>
+        <sys_mod_count>132</sys_mod_count>
+        <sys_name>qa_questionaire_home</sys_name>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_ui_page_06460e4b2b2e1200229d7b9ee8da158c</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-08 14:51:42</sys_updated_on>
+    </sys_ui_page>
+</record_update>

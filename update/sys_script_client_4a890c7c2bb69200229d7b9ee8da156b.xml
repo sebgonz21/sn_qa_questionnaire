@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>channel</field>
+        <global>true</global>
+        <messages/>
+        <name>Info Field Messages</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	g_form.showFieldMsg('name','Your Name','info');
+	g_form.showFieldMsg('date_code','(Handbags & SLG\'s only)','info');
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-12 15:10:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4a890c7c2bb69200229d7b9ee8da156b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Info Field Messages</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_script_client_4a890c7c2bb69200229d7b9ee8da156b</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-25 13:25:55</sys_updated_on>
+        <table>x_kasp_qa_question_qa_questionaire</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

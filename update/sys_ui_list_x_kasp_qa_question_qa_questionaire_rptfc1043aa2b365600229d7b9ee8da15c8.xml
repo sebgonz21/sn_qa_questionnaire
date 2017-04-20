@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_kasp_qa_question_qa_questionaire" version="2" view="RPTfc1043aa2b365600229d7b9ee8da15c8">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>c91043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>store_number</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>0d1043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>store_name</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>4d1043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>8d1043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>season</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>cd1043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>channel</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>011043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>upc</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>411043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>style_number</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>811043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>style_name</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>c11043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>color_code</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>051043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>color_name</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>451043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>issue</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>851043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>issue_description</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>12</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>c51043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_kasp_qa_question_qa_questionaire" element="NULL" name="x_kasp_qa_question_qa_questionaire" parent="NULL" relationship="NULL" sys_domain="global" view="f3adc18b2bfa120445eeaacc17da15df">091043aa2b365600229d7b9ee8da15c9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>13</position>
+            <sum>false</sum>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_id>091043aa2b365600229d7b9ee8da15ca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-18 14:57:03</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>091043aa2b365600229d7b9ee8da15c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_kasp_qa_question_qa_questionaire</sys_name>
+            <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+            <sys_update_name>sys_ui_list_x_kasp_qa_question_qa_questionaire_RPTfc1043aa2b365600229d7b9ee8da15c8</sys_update_name>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-18 14:57:03</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptfc1043aa2b365600229d7b9ee8da15c8" name="RPTfc1043aa2b365600229d7b9ee8da15c8">f3adc18b2bfa120445eeaacc17da15df</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

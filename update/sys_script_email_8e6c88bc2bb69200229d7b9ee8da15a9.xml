@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>qa_weekly_notification_script</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(current, template, email, email_action, event) {
+
+	var rec = new GlideRecord('x_kasp_qa_question_qa_questionaire');
+	rec.addEncodedQuery('sys_created_onONLast week@javascript:gs.beginningOfLastWeek()@javascript:gs.endOfLastWeek()');
+	rec.query();
+	
+	template.print('<style>');
+	
+	template.print('table{');
+	template.print('border-collapse: collapse;'); 
+	template.print('}');
+
+	template.print('td{');
+	template.print('border: 1px solid black;');
+	template.print('text-align: left;');
+	template.print('font-family:Calibri;');
+	template.print('font-size: 12px;');
+	template.print('padding:0px 5px 0px 5px;');
+	template.print('}');
+
+	template.print('th{');
+	template.print('background-color: #4491FA;');
+	template.print('color:white;');
+	template.print('text-align: left;');
+	template.print('font-family:Calibri;');
+	template.print('font-size: 12px;');
+	template.print('font-weight: bold');
+	template.print('}');
+	
+	
+    template.print('</style>');
+	
+	template.print('<p>The following QA Questionaires were submitted in the past week</p>');
+	
+	template.print('<p>Note the report is also attached to the email</p>');
+	
+	template.print('<table>');
+	template.print('<tr>');
+		template.print('<th>Number</th>');
+		template.print('<th>Store Number</th>');
+		template.print('<th>Store Name</th>');
+		template.print('<th>Name</th>');
+		template.print('<th>Channel</th>');
+		template.print('<th>Season</th>');
+		template.print('<th>Date Code</th>');
+		template.print('<th>UPC</th>');
+		template.print('<th>Style Number</th>');
+		template.print('<th>Style Name</th>');
+		template.print('<th>Color Code</th>');
+		template.print('<th>Color Name</th>');
+		template.print('<th>Issue</th>');
+		template.print('<th>Description</th>');
+	template.print('</tr>');
+	
+	while(rec.next()){
+		template.print('<tr>');
+		template.print('<td>');
+		template.print(rec.getValue('number'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getElement('store_number').getDisplayValue());
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('store_name'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('name'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('channel'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('season'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('date_code'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('upc'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('style_number'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('style_name'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('color_code'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('color_name'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('issue'));
+		template.print('</td>');
+		template.print('<td>');
+		template.print(rec.getValue('issue_description'));
+		template.print('</td>');
+		template.print('</tr>');
+	}
+	
+	
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-12 15:33:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8e6c88bc2bb69200229d7b9ee8da15a9</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>qa_weekly_notification_script</sys_name>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_script_email_8e6c88bc2bb69200229d7b9ee8da15a9</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-25 14:00:22</sys_updated_on>
+    </sys_script_email>
+</record_update>

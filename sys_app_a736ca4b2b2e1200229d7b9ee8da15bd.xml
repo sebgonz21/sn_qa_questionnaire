@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <enforce_license>log</enforce_license>
+        <js_level>traditional</js_level>
+        <licensable>true</licensable>
+        <logo/>
+        <menu/>
+        <name>QA Questionnaire</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking/>
+        <scope>x_kasp_qa_question</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_kasp_qa_question</source>
+        <store_correlation_id>REPOAPP0000008023</store_correlation_id>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-07 13:45:39</sys_created_on>
+        <sys_id>a736ca4b2b2e1200229d7b9ee8da15bd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-19 19:06:32</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+</record_update>

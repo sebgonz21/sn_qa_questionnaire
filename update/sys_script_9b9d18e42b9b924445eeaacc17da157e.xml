@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_kasp_qa_question_qa_questionaire</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Get Attachment Count</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var attachCount = new GlideAggregate('sys_attachment');
+	attachCount.addQuery('table_sys_id',current.sys_id);
+	attachCount.addAggregate('COUNT');
+	attachCount.query();
+	
+	var numAttachments = 0;
+	// if no other attachments task does not have attachment
+	if (attachCount.next()) {
+		numAttachments = attachCount.getAggregate("COUNT");	
+	}
+	
+	if(numAttachments > 0){
+		if(current.getElement('date_code').getDisplayValue().length > 0){
+			if(numAttachments < 2){
+				gs.addErrorMessage('*Please attach both a picture of the issue and the traceability label inside');
+				current.setAbortAction(true);
+				return;
+			}
+		}
+	}else{
+		
+		gs.addErrorMessage('*Please attach picture of issue');
+		current.setAbortAction(true);
+		return;
+	}
+	gs.addInfoMessage('QA Questionnaire submitted!');
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-05-06 18:45:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>9b9d18e42b9b924445eeaacc17da157e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Get Attachment Count</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_script_9b9d18e42b9b924445eeaacc17da157e</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-05-10 01:17:45</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

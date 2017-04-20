@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>channel</field>
+        <global>true</global>
+        <messages/>
+        <name>Autofill Store number and name</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	
+	if(g_form.getValue('store_number') != ''){
+		return;
+	}
+	
+	g_form.setValue('store_number',g_user.userID);
+	//g_form.setValue('store_name',g_user.getFullName());
+	
+	var storeNumber = g_user.lastName;
+	
+	
+	if(storeNumber.indexOf('1') == 0){
+		g_form.setValue('channel','Outlet');
+	}else if(storeNumber.indexOf('3') == 0){
+		g_form.setValue('channel','Specialty');
+	}
+	
+	var rec = g_form.getReference('store_number',function(user){
+		g_form.setValue('store_name',user.u_display_name);
+	});
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-11 14:07:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>51d0be942b7ad20029a6cfa219da1514</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Autofill Store number and name</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_script_client_51d0be942b7ad20029a6cfa219da1514</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-05-11 04:40:33</sys_updated_on>
+        <table>x_kasp_qa_question_qa_questionaire</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

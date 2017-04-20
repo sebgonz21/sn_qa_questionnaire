@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="date_code" label="Date Code" language="en" table="x_kasp_qa_question_qa_questionaire">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>date_code</element>
+            <help/>
+            <hint/>
+            <label>Date Code</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <plural>Date Codes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-25 13:22:42</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8f9deef8130f124053dc71522244b071</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Date Code</sys_name>
+            <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+            <sys_update_name>sys_documentation_x_kasp_qa_question_qa_questionaire_date_code_en</sys_update_name>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-25 13:22:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

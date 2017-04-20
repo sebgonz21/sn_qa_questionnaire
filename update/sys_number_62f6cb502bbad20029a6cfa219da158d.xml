@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_kasp_qa_question_qa_questionaire">x_kasp_qa_question_qa_questionaire</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>QAQ</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>sebgar01</sys_created_by>
+        <sys_created_on>2016-04-11 15:41:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>62f6cb502bbad20029a6cfa219da158d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QAQ</sys_name>
+        <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+        <sys_update_name>sys_number_62f6cb502bbad20029a6cfa219da158d</sys_update_name>
+        <sys_updated_by>sebgar01</sys_updated_by>
+        <sys_updated_on>2016-04-11 15:41:08</sys_updated_on>
+    </sys_number>
+</record_update>

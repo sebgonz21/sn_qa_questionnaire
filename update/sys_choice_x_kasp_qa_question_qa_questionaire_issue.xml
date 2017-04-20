@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="issue" table="x_kasp_qa_question_qa_questionaire" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Body Raw Material Defect</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sequence>0</sequence>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>323032142b7ad20029a6cfa219da150f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+            <value>Body Raw Material Defect</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Trim Raw Material Defect</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sequence>1</sequence>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>473032142b7ad20029a6cfa219da150f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+            <value>Trim Raw Material Defect</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hardware Defect</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sequence>2</sequence>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c73032142b7ad20029a6cfa219da150f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+            <value>Hardware Defect</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Construction Issue</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sequence>3</sequence>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>4b3032142b7ad20029a6cfa219da150f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+            <value>Construction Issue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sequence>4</sequence>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cb3032142b7ad20029a6cfa219da150f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+            <value>Other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>issue</element>
+            <name>x_kasp_qa_question_qa_questionaire</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sebgar01</sys_created_by>
+            <sys_created_on>2016-04-11 14:01:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>97adc18b2bfa120445eeaacc17da15c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>issue</sys_name>
+            <sys_package display_value="QA Questionnaire" source="x_kasp_qa_question">a736ca4b2b2e1200229d7b9ee8da15bd</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="QA Questionnaire">a736ca4b2b2e1200229d7b9ee8da15bd</sys_scope>
+            <sys_update_name>sys_choice_x_kasp_qa_question_qa_questionaire_issue</sys_update_name>
+            <sys_updated_by>sebgar01</sys_updated_by>
+            <sys_updated_on>2016-04-11 14:01:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>
